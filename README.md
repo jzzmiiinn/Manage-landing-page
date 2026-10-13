@@ -1,75 +1,80 @@
-# React + TypeScript + Vite
+# Manage Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive landing page built from the [Frontend Mentor Manage landing page challenge](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5).
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Manage is a project management landing page designed to help teams organize their work, collaborate effectively, and stay focused on their goals.
 
-## React Compiler
+This project focuses on recreating the provided design while practicing responsive layouts, reusable React components, and interactive UI elements.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* Responsive layout for mobile and desktop screens
+* Mobile navigation menu
+* Hero section with a call-to-action
+* Features section highlighting Manage's benefits
+* Testimonials section with mobile navigation
+* Call-to-action section
+* Footer with newsletter form layout
+* Reusable components built with React and TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Built With
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
+* pnpm
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
 
-```
+Make sure you have Node.js and pnpm installed.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repository:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+   ```bash
+   git clone https://github.com/jzzmiiinn/Manage-landing-page.git
+   ```
 
-```
+2. Navigate to the project directory:
+
+   ```bash
+   cd Manage-landing-page
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   pnpm dev
+   ```
+
+5. Open the local URL shown in your terminal.
+
+## What I Learned
+
+* Building reusable components with React
+* Using TypeScript to define component props and data types
+* Creating responsive layouts with Tailwind CSS
+* Managing component state with React's `useState` hook
+* Implementing interactive mobile navigation and testimonial controls
+
+## Acknowledgements
+
+* [Frontend Mentor](https://www.frontendmentor.io/) for the challenge and design resources.
+
+## Author
+
+**Yasmin Ali**
+
+* GitHub: [@jzzmiiinn](https://github.com/jzzmiiinn)
